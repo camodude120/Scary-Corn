@@ -742,7 +742,7 @@ GameObject:
   m_Component:
   - component: {fileID: 588094677}
   m_Layer: 0
-  m_Name: CandyCorn
+  m_Name: CandyCorn Steve
   m_TagString: Weakpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1382,7 +1382,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1283025692}
   m_Layer: 0
-  m_Name: CandyCorn (1)
+  m_Name: CandyCorn Fred
   m_TagString: Weakpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
