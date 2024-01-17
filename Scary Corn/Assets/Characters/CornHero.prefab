@@ -75,7 +75,6 @@ GameObject:
   - component: {fileID: 547948031451253230}
   - component: {fileID: 2089546487732903839}
   - component: {fileID: 8983024872671146565}
-  - component: {fileID: 8100659711900494435}
   m_Layer: 0
   m_Name: CornHero
   m_TagString: Player
@@ -246,18 +245,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8100659711900494435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3240044933016501909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e915fda364b7eca4b933de2882592877, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3533178645915731495
 GameObject:
   m_ObjectHideFlags: 0
