@@ -16,7 +16,9 @@ public class CornScript : MonoBehaviour
     public float checkRadius;
     public int maxJumpCount;
     public GameObject DeathExplosion;
-
+    public static bool isRunning;
+  /*  public bool isSprinting = false;
+    public float sprintingMultiplier;*/
 
 
     private Rigidbody2D rb;
@@ -72,6 +74,15 @@ public class CornScript : MonoBehaviour
         {
             isJumping = true;
         }
+       /* if (Input.GetKey(KeyCode.LeftShift))
+        {
+            isSprinting = true;
+        }
+        else
+        {
+            isSprinting = false;
+        }*/
+
     }
 
 
@@ -100,6 +111,12 @@ public class CornScript : MonoBehaviour
 
         }
         isJumping = false;
+
+        if(isRunning == true)
+        {
+            moveSpeed = 15; 
+        }
+        
     }
 
     private void Animate()
