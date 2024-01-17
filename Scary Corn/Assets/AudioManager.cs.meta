@@ -3,7 +3,12 @@ guid: 7d2782cd320a3c44e82d2114b90df1f3
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - musicSource: {instanceID: 0}
+  - SFXSource: {instanceID: 0}
+  - jump: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
+  - CandyCorn: {instanceID: 0}
+  - CobBoss: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
