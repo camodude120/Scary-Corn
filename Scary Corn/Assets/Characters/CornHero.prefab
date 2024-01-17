@@ -72,9 +72,9 @@ GameObject:
   m_Component:
   - component: {fileID: 465547119703014242}
   - component: {fileID: 1399118348723395159}
+  - component: {fileID: 8983024872671146565}
   - component: {fileID: 547948031451253230}
   - component: {fileID: 2089546487732903839}
-  - component: {fileID: 8983024872671146565}
   m_Layer: 0
   m_Name: CornHero
   m_TagString: Player
@@ -153,6 +153,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &8983024872671146565
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3240044933016501909}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 2.5
+  m_Material: {fileID: 6200000, guid: b1214bad2193895498fe3cde86b82cb9, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!61 &547948031451253230
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -218,33 +245,7 @@ MonoBehaviour:
     m_Bits: 8
   checkRadius: 0
   maxJumpCount: 3
---- !u!50 &8983024872671146565
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3240044933016501909}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 2.5
-  m_Material: {fileID: 6200000, guid: b1214bad2193895498fe3cde86b82cb9, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
+  DeathExplosion: {fileID: 0}
 --- !u!1 &3533178645915731495
 GameObject:
   m_ObjectHideFlags: 0

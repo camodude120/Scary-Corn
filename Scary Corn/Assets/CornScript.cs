@@ -70,6 +70,7 @@ public class CornScript : MonoBehaviour
     void ProcessInputs()
     {
         moveDirection = Input.GetAxis("Horizontal");
+
         if (Input.GetButtonDown("Jump") && jumpCount > 0)
         {
             isJumping = true;
@@ -112,11 +113,6 @@ public class CornScript : MonoBehaviour
         }
         isJumping = false;
 
-        if(isRunning == true)
-        {
-            moveSpeed = 15; 
-        }
-        
     }
 
     private void Animate()

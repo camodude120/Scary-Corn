@@ -631,6 +631,64 @@ MonoBehaviour:
   totalStamina: 100
   stamina: 0
   staminaBar: {fileID: 0}
+--- !u!114 &1721098929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721098915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f28364d317f7af244bc0dd420e2b8dce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 8
+--- !u!114 &1721098934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721098915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eb05d4546d60ed4596e16bae0eb2035, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpSpeed: 22
+  xOffset: 0.23
+  yOffset: -2.63
+  xSize: 3.17
+  ySize: 1.14
+  isGrounded: 0
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!114 &1721098935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721098915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b14c84878b978140b0dd193c756bdf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1721098936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721098915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7fdf6b084c55be448f94d8f53a9902b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1796080771 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3773793501336973965, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
@@ -1361,6 +1419,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2089546487732903839, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089546487732903839, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
       propertyPath: isSprinting
       value: 0
       objectReference: {fileID: 0}
@@ -1381,8 +1443,16 @@ PrefabInstance:
       value: 8.64
       objectReference: {fileID: 0}
     - target: {fileID: 8983024872671146565, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983024872671146565, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
       propertyPath: m_GravityScale
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983024872671146565, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1396,7 +1466,19 @@ PrefabInstance:
       addedObject: {fileID: 1721098923}
     - targetCorrespondingSourceObject: {fileID: 3240044933016501909, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1721098935}
+    - targetCorrespondingSourceObject: {fileID: 3240044933016501909, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1721098928}
+    - targetCorrespondingSourceObject: {fileID: 3240044933016501909, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1721098929}
+    - targetCorrespondingSourceObject: {fileID: 3240044933016501909, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1721098934}
+    - targetCorrespondingSourceObject: {fileID: 3240044933016501909, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1721098936}
   m_SourcePrefab: {fileID: 100100000, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
