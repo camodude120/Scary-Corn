@@ -14,17 +14,18 @@ public class PlayerSprint : MonoBehaviour
         stamina = totalStamina;
     }
 
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.LeftShift) && stamina > 0)
         {
-            CornScript.isRunning = true;
+            playerVariable.isSprinting = true;
             stamina -= 0.5f;
         }
         else
         {
-            CornScript.isRunning = false;
+            playerVariable.isSprinting = false;
         }
 
         if (stamina < 100 && !Input.GetKey(KeyCode.LeftShift))

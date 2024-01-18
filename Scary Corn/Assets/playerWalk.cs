@@ -9,7 +9,9 @@ public class PlayerWalk : MonoBehaviour
     private float moveInput;
     private bool facingRight = true;
     public float moveSpeed;
+    public PlayerSprint sprint;
 
+    public float maxMoveSpeed;
 
     // Start is called before the first frame update
     void Start()
@@ -20,11 +22,24 @@ public class PlayerWalk : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        moveSpeed = maxMoveSpeed;
+
+        if (playerVariable.isHitting[0] || playerVariable.isHitting[1] || playerVariable.isHitting[2])
+        {
+            moveSpeed = maxMoveSpeed * 0.5f;
+        }
+        if (sprint.stamina > 0 && playerVariable.isSprinting)
+        {
+            moveSpeed *= 2;
+        }
+
         ProcessInputs();
 
         Walk();
 
         Animate();
+
+        
     }
 
     private void Walk()

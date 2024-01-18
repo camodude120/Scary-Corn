@@ -644,6 +644,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
+  sprint: {fileID: 1721098928}
+  maxMoveSpeed: 8
 --- !u!114 &1721098934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -656,9 +658,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eb05d4546d60ed4596e16bae0eb2035, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxJumpCount: 2
   jumpSpeed: 22
   xOffset: 0.23
-  yOffset: -2.63
+  yOffset: -2.33
   xSize: 3.17
   ySize: 1.14
   isGrounded: 0
@@ -708,6 +711,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c14c1a696d76c4442804529f8d1f94bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1721098946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721098915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b6216718e18e404da9e7dec6eb94fc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathExplosion: {fileID: 3382159136986488202, guid: afbb716481cb04c44aa0bab830f05a35, type: 3}
 --- !u!4 &1796080771 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3773793501336973965, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
@@ -1426,6 +1442,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 547948031451253230, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
+      propertyPath: m_Size.x
+      value: 4.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 547948031451253230, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
@@ -1443,10 +1463,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2089546487732903839, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
       propertyPath: moveSpeed
-      value: 60
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2089546487732903839, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
       propertyPath: isSprinting
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089546487732903839, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
+      propertyPath: maxJumpCount
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2089546487732903839, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
@@ -1505,6 +1529,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3240044933016501909, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1721098941}
+    - targetCorrespondingSourceObject: {fileID: 3240044933016501909, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1721098946}
   m_SourcePrefab: {fileID: 100100000, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
