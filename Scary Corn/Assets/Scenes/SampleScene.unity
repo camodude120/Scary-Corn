@@ -689,6 +689,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7fdf6b084c55be448f94d8f53a9902b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 
+  playerIdle: playerIdle
+  playerWalk: playerWalk
+  playerJump: playerJump
+  playerHit1: playerHit1
+  playerHit2: playerHit2
+  playerHit3: playerHit3
+--- !u!114 &1721098941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721098915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c14c1a696d76c4442804529f8d1f94bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1796080771 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3773793501336973965, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
@@ -1423,6 +1442,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2089546487732903839, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
+      propertyPath: moveSpeed
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089546487732903839, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
       propertyPath: isSprinting
       value: 0
       objectReference: {fileID: 0}
@@ -1479,6 +1502,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3240044933016501909, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1721098936}
+    - targetCorrespondingSourceObject: {fileID: 3240044933016501909, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1721098941}
   m_SourcePrefab: {fileID: 100100000, guid: eb1bbd1b88581c143acac9a6088af9a6, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

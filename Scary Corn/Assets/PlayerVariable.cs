@@ -5,4 +5,6 @@ using UnityEngine;
 public class playerVariable : MonoBehaviour
 {
     public static bool isWalking, isJumping;
+
+    public static bool[] isHitting = new bool[3];
 }
