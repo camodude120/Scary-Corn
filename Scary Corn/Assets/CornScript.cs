@@ -134,8 +134,8 @@ public class CornScript : MonoBehaviour
 
 
     //Ontrigger it will you can go through
-    private void OnTriggerEnter2D(Collider2D collision)
+   /* private void OnTriggerEnter2D(Collider2D collision)
     {
        
-    }
+    }*/
 }
