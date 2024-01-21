@@ -4045,9 +4045,9 @@ GameObject:
   - component: {fileID: 419641261}
   - component: {fileID: 419641260}
   - component: {fileID: 419641262}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: KillZone
-  m_TagString: Untagged
+  m_TagString: Teleport
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -9,6 +9,7 @@ TagManager:
   - Audio
   - KillZone
   - Popped
+  - Teleport
   layers:
   - Default
   - TransparentFX
